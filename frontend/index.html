@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games</title>
+  <script src="./js/createGame.js" defer></script>
+  <script src="./js/deleteGame.js" defer></script>
+  <script src="./js/editGame.js" defer></script>
+  <script src="./js/listGames.js" defer></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</head>
+
+<body class="container mt-5">
+  <h4>Lista de games</h4>
+  <table class="table mt-3 table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th> ID </th>
+        <th> Jogo </th>
+        <th> Lançamento </th>
+        <th> Preço </th>
+        <th> Ações </th>
+      </tr>
+    </thead>
+    <tbody id="tr-games">
+    </tbody>
+  </table>
+  <hr />
+  <div class="d-flex">
+    <div class="w-50">
+      <h4>Novo Game</h4>
+      <form>
+        <div class="form-group p-3">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Novo do Jogo" />
+          <input type="number" class="form-control" name="year" id="year" placeholder="Ano de lançamento do Jogo" />
+          <input type="number" class="form-control" name="price" id="price" placeholder="valor do Jogo" />
+          <button type="button" class="btn btn-primary mt-2" id="create-button" onclick="createGame()">Criar</button>
+        </div>
+      </form>
+    </div>
+    <div class="w-50">
+      <h4>Editar Game</h4>
+      <form>
+        <div class="form-group p-3">
+          <input type="text" class="form-control" name="idEdit" id="idEdit" placeholder="ID" readonly />
+          <input type="text" class="form-control" name="titleEdit" id="titleEdit" placeholder="Título" />
+          <input type="number" class="form-control" name="yearEdit" id="yearEdit" placeholder="Ano" />
+          <input type="number" class="form-control" name="priceEdit" id="priceEdit" placeholder="Preço" />
+          <button type="button" class="btn btn-primary mt-2" id="edit-button" onclick="updateGame()">Editar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+</html>
