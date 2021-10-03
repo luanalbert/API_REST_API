@@ -10,6 +10,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [Axios](https://axios-http.com/)
 - [Sequelize](https://sequelize.org/)
+- [Bootstrap](https://getbootstrap.com.br/)
 
 
 ### Pré-requisitos
