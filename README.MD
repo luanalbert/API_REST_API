@@ -31,15 +31,12 @@ $ npm install
 ou
 $ yarn install
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev
+# Criação do banco de dados
+$ npm sequelize db:migrate
 ou
-$ yarn dev
+$ yarn sequelize db:migrate
 
 # O servidor inciará na porta:3300 - acesse <http://localhost:3300>
-
-
-# PS: Importante configurar seu Banco de dados em SRC/CONFIG/DATABASE.JS
 ```
 ### Features
 
