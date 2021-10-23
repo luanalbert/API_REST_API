@@ -1,0 +1,19 @@
+.image{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.card-title{
+    text-align: center;
+    font-weight: bolder;
+}
+#btn-add:hover{
+    cursor: pointer;
+}
+
+label{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}

@@ -21,12 +21,13 @@ module.exports = {
     }
   },
   async create(req, res) {
-    let { name, price, year } = req.body;
-    if (name == "" || price == "" || year == "") {
+    let { name, image, price, year } = req.body;
+    if (name == "" || price == "" || year == "" || image == "") {
       res.json({ message: "blank game, please fill in and then add." });
     } else {
       await Game.create({
         name: name,
+        image: image,
         price: price,
         year: year,
       })
@@ -68,10 +69,10 @@ module.exports = {
     } else {
       var id = parseInt(id);
       if (id != undefined) {
-        var { name, price, year } = req.body;
+        var { name, image, price, year } = req.body;
 
         Game.update(
-          { name: name, price: price, year: year },
+          { name: name, image: image, price: price, year: year },
           {
             where: {
               id: id,

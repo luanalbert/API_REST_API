@@ -9,3 +9,4 @@ function deleteGame(listItem) {
       console.log(err);
     });
 }
+

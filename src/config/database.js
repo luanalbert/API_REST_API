@@ -1,6 +1,6 @@
 module.exports = {
   dialect: "sqlite",
-  host: "127.0.0.1",
+  host: "localhost",
   storage: "src/database/db.sqlite",
   operatorAliases: false,
   logging: false,

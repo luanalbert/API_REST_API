@@ -1,10 +1,12 @@
 function createGame() {
   var nameInput = document.getElementById("name");
+  var imageInput = document.getElementById("image");
   var yearInput = document.getElementById("year");
   var priceInput = document.getElementById("price");
 
   var game = {
     name: nameInput.value,
+    image: imageInput.value,
     year: yearInput.value,
     price: priceInput.value,
   };
